@@ -1,0 +1,4 @@
+interface:
+  display_name: "System Design"
+  short_description: "Architecture, scaling, data, and security guidance"
+  default_prompt: "Use $system-design to design a scalable backend architecture and explain trade-offs."
