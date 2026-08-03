@@ -30,6 +30,8 @@
 - Return `409` for conflicts.
 - Return `429` for rate limits.
 - Keep error bodies consistent.
+- Never put sensitive data (passwords, API keys, tokens) in the URL path or query parameters.
+- Use the request body or a secure header for sensitive attributes.
 
 ## GraphQL Checklist
 
@@ -107,3 +109,14 @@
 - Document pagination.
 - Document deprecation policy.
 - Document breaking changes.
+
+## Anti-Pattern Avoidance Checklist
+
+- No verb endpoints such as `/getUser` or `/createOrder`; use HTTP methods instead.
+- No sensitive data in URL query parameters; use the request body or secure header.
+- No deep nesting beyond two levels; flatten with query parameters.
+- No `GET` requests that mutate state.
+- No `POST` requests for deletes or replacements where `PUT`/`DELETE` is correct.
+- Guard `POST` endpoints against accidental duplicate submission with idempotency keys or unique constraints.
+- Apply POST/Redirect/GET pattern in browser flows to prevent form resubmission errors.
+- Do not pass `Date` objects, functions, or `undefined` through JSON; serialize dates as ISO 8601 strings and use `null` for no-value attributes.
