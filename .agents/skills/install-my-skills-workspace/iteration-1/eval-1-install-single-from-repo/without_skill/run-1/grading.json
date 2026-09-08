@@ -1,0 +1,28 @@
+{
+  "expectations": [
+    {
+      "text": "system-design skill is installed at project level in the working directory",
+      "passed": true,
+      "evidence": "Sandbox .agents/skills/system-design/ exists; skills-lock.json lists system-design"
+    },
+    {
+      "text": "Skill is installed from Shalin-Shah-2002/My_Resources (correct source repo)",
+      "passed": false,
+      "evidence": "skills-lock.json verified by direct inspection: system-design source=wondelai/skills — a random third-party repo, not Shalin's repo. Baseline had no way to know the intended source."
+    },
+    {
+      "text": "No global installation was performed",
+      "passed": true,
+      "evidence": "~/.config/opencode/skills/ contains no entries; all installs confined to the sandbox project directory"
+    }
+  ],
+  "summary": { "passed": 2, "failed": 1, "total": 3, "pass_rate": 0.67 },
+  "claims": [
+    {
+      "claim": "Baseline went through an install-all-then-remove detour (installed 65 skills, removed them all)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Run report steps 4-5: 'npx skills add wondelai/skills@system-design --all' followed by 'npx skills remove --all'"
+    }
+  ]
+}

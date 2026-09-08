@@ -1,0 +1,28 @@
+{
+  "expectations": [
+    {
+      "text": "system-design skill is installed at project level in the working directory",
+      "passed": true,
+      "evidence": "Sandbox .agents/skills/system-design/SKILL.md exists; skills-lock.json lists system-design; npx skills list shows 'system-design ./.agents/skills/system-design'"
+    },
+    {
+      "text": "Skill is installed from Shalin-Shah-2002/My_Resources (correct source repo)",
+      "passed": true,
+      "evidence": "skills-lock.json verified by direct inspection: system-design source=Shalin-Shah-2002/My_Resources"
+    },
+    {
+      "text": "No global installation was performed",
+      "passed": true,
+      "evidence": "~/.config/opencode/skills/ contains no entries; all installs confined to the sandbox project directory"
+    }
+  ],
+  "summary": { "passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0 },
+  "claims": [
+    {
+      "claim": "Catalog fetch 404'd and bundled fallback was used, correctly resolving system-design to Shalin-Shah-2002/My_Resources",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Run report lists the curl 404 and fallback; final install source in skills-lock.json matches"
+    }
+  ]
+}

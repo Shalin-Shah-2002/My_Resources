@@ -1,0 +1,10 @@
+{
+  "eval_id": 1,
+  "eval_name": "install-single-from-repo",
+  "prompt": "install the system-design skill on project level",
+  "assertions": [
+    "system-design skill is installed at project level in the working directory",
+    "Skill is installed from Shalin-Shah-2002/My_Resources (correct source repo)",
+    "No global installation was performed"
+  ]
+}

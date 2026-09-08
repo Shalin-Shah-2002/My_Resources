@@ -1,0 +1,21 @@
+{
+  "expectations": [
+    {
+      "text": "Searched the skills.sh ecosystem before installing (ran skills find)",
+      "passed": true,
+      "evidence": "Run report: 'npx skills find dataviz', then 'npx skills find data visualization' plus a GitHub API cross-check before installing"
+    },
+    {
+      "text": "A dataviz skill is installed at project level",
+      "passed": true,
+      "evidence": "Sandbox .agents/skills/data-visualization/ exists; skills-lock.json lists data-visualization"
+    },
+    {
+      "text": "Chose a high-quality source (official publisher or >=1k installs)",
+      "passed": true,
+      "evidence": "Installed anthropics/knowledge-work-plugins@data-visualization — official Anthropic plugin repo, 11.8K installs, passed all three security scans"
+    }
+  ],
+  "summary": { "passed": 3, "failed": 0, "total": 3, "pass_rate": 1.0 },
+  "claims": []
+}

@@ -1,0 +1,10 @@
+{
+  "eval_id": 3,
+  "eval_name": "fallback-external-skill",
+  "prompt": "I remember seeing a dataviz skill somewhere online — find and install it for me",
+  "assertions": [
+    "Searched the skills.sh ecosystem before installing (ran skills find)",
+    "A dataviz skill is installed at project level",
+    "Chose a high-quality source (official publisher or >=1k installs)"
+  ]
+}

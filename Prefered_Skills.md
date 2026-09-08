@@ -87,6 +87,68 @@ npx skills add https://github.com/anthropics/skills --skill skill-creator
 
 ---
 
+## 🦸 Superpowers
+
+> Source: [github.com/obra/superpowers](https://github.com/obra/superpowers) — Jesse Vincent's engineering-process skills
+
+Install all at once:
+```bash
+npx skills add https://github.com/obra/superpowers
+```
+
+> *Battle-tested development workflow skills — brainstorming, writing & executing plans, test-driven development, systematic debugging, subagent-driven development, git worktrees, requesting/receiving code review, and verification before completion.*
+
+<details>
+<summary>Install individually</summary>
+
+```bash
+npx skills add https://github.com/obra/superpowers --skill brainstorming
+npx skills add https://github.com/obra/superpowers --skill dispatching-parallel-agents
+npx skills add https://github.com/obra/superpowers --skill executing-plans
+npx skills add https://github.com/obra/superpowers --skill finishing-a-development-branch
+npx skills add https://github.com/obra/superpowers --skill receiving-code-review
+npx skills add https://github.com/obra/superpowers --skill requesting-code-review
+npx skills add https://github.com/obra/superpowers --skill subagent-driven-development
+npx skills add https://github.com/obra/superpowers --skill systematic-debugging
+npx skills add https://github.com/obra/superpowers --skill test-driven-development
+npx skills add https://github.com/obra/superpowers --skill using-git-worktrees
+npx skills add https://github.com/obra/superpowers --skill using-superpowers
+npx skills add https://github.com/obra/superpowers --skill verification-before-completion
+npx skills add https://github.com/obra/superpowers --skill writing-plans
+npx skills add https://github.com/obra/superpowers --skill writing-skills
+```
+
+</details>
+
+---
+
+## 🐴 Ponytail
+
+> Source: [github.com/DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
+
+Install all at once:
+```bash
+npx skills add https://github.com/DietrichGebert/ponytail
+```
+
+> *The lazy senior dev — forces the simplest, most minimal solution that actually works (YAGNI, stdlib-first, deletion over addition). Companion skills audit the codebase for over-engineering, review diffs for bloat, and track deferred shortcuts.*
+
+<details>
+<summary>Install individually</summary>
+
+```bash
+npx skills add https://github.com/DietrichGebert/ponytail --skill ponytail
+npx skills add https://github.com/DietrichGebert/ponytail --skill ponytail-audit
+npx skills add https://github.com/DietrichGebert/ponytail --skill ponytail-review
+npx skills add https://github.com/DietrichGebert/ponytail --skill ponytail-debt
+npx skills add https://github.com/DietrichGebert/ponytail --skill ponytail-gain
+npx skills add https://github.com/DietrichGebert/ponytail --skill ponytail-help
+```
+
+</details>
+
+---
+
 ## 🚀 UI-UX Pro Max
 
 ```bash
@@ -254,6 +316,12 @@ npx skills add https://github.com/anthropics/skills --skill skill-creator
 npx skills add https://github.com/anthropics/skills --skill frontend-design
 npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
 
+# Workflow (Superpowers — all skills)
+npx skills add https://github.com/obra/superpowers
+
+# Lazy coding (Ponytail — all skills)
+npx skills add https://github.com/DietrichGebert/ponytail
+
 # Flutter (all skills)
 npx skills add flutter/skills --select-all
 
@@ -287,6 +355,6 @@ npx skills add https://www.skills.sh/flutter/skills --skill dart-run-static-anal
 
 <div align="center">
 
-*Last updated: July 2026*
+*Last updated: September 2026*
 
 </div>
