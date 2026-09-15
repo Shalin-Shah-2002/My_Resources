@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Design"
+  short_description: "REST, GraphQL, gRPC, security, and lifecycle guidance"
+  default_prompt: "Use $api-design to design a secure, maintainable API contract and implementation plan."

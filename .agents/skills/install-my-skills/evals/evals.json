@@ -1,0 +1,23 @@
+{
+  "skill_name": "install-my-skills",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "install the system-design skill on project level",
+      "expected_output": "system-design skill installed at project level in the working directory from Shalin-Shah-2002/My_Resources using the skills CLI",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "set up my skills for backend",
+      "expected_output": "All backend-bundle skills (api-design, system-design) installed at project level from Shalin-Shah-2002/My_Resources",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I remember seeing a dataviz skill somewhere online — find and install it for me",
+      "expected_output": "Skill not in my repo, so it searches the skills.sh ecosystem, finds the dataviz skill (anthropics/skills), and installs it at project level",
+      "files": []
+    }
+  ]
+}
