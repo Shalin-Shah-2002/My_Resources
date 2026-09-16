@@ -1,9 +1,7 @@
 # Skills Catalog — Shalin's skills
 
-Live source (wins when fetchable):
-https://raw.githubusercontent.com/Shalin-Shah-2002/My_Resources/main/Skills_By_Shalin/catalog.md
-
-This file is a bundled fallback snapshot.
+This file is the source of truth for installs (see `Skills_By_Shalin/install-my-skills/SKILL.md`).
+A snapshot of this file is bundled at `install-my-skills/references/catalog-fallback.md`.
 
 ## Skills
 
@@ -26,22 +24,27 @@ This file is a bundled fallback snapshot.
 | architecture | system-design, api-design |
 | flutter | (empty — add flutter skills here) |
 
-**backend bundle recipe** (mainly for new projects):
+**backend bundle install recipe** (mainly for new projects):
 
 ```bash
+# 1. My skill
 npx skills add Shalin-Shah-2002/My_Resources --skill api-design -y
+# 2. Matt Pocock's skills (one command, one repo)
 npx skills add mattpocock/skills --skill grill-me --skill grill-with-docs --skill improve-codebase-architecture -y
-# then install the ponytail plugin for the current harness — see SKILL.md "Plugins"
+# 3. ponytail plugin — install for the harness in use (see SKILL.md "Plugins")
 ```
 
 ## Plugins
 
+Not skills.sh skills — each has its own per-harness install. Details in `install-my-skills/SKILL.md`.
+
 | plugin | source | notes |
 |--------|--------|-------|
-| ponytail | DietrichGebert/ponytail | Minimal-code ruleset; per-harness install, in the backend bundle |
+| ponytail | DietrichGebert/ponytail | Minimal-code ruleset; included in the backend bundle, install for the current harness |
 
 ## Adding entries
 
 - New skill in my repo: add a row under Skills with source `Shalin-Shah-2002/My_Resources`, then add it to any bundles.
 - External skill: source is the skill's GitHub `owner/repo`.
+- Plugin: add a row under Plugins and mention it in the bundle line.
 - New bundle: add a row under Bundles.
