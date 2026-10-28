@@ -77,6 +77,16 @@ npx skills add https://github.com/mattpocock/skills --skill improve-codebase-arc
 
 ---
 
+## 🎓 Teach
+
+```bash
+npx skills add https://github.com/mattpocock/skills --skill teach
+```
+
+> *Turns the current directory into a stateful teaching workspace — mission, resources, learning records, and short interactive HTML lessons built around retrieval practice. Invoke with `/teach`.*
+
+---
+
 ## 🛠️ Skill Creator
 
 ```bash
@@ -310,6 +320,7 @@ npx skills add https://github.com/vercel-labs/skills --skill find-skills
 npx skills add https://github.com/mattpocock/skills --skill grill-me
 npx skills add https://github.com/mattpocock/skills --skill grill-with-docs
 npx skills add https://github.com/mattpocock/skills --skill improve-codebase-architecture
+npx skills add https://github.com/mattpocock/skills --skill teach
 npx skills add https://github.com/anthropics/skills --skill skill-creator
 
 # Design
